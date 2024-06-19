@@ -1,0 +1,108 @@
+.react-terminal-window-buttons {
+  display: none !important;
+}
+.react-terminal {
+  height: 90vh !important;
+}
+.available-commands {
+  font-weight: bolder;
+  padding-top: 2em;
+  font-size: 1.5em
+}
+.command-title {
+  color: #7cff00;
+  font-weight: bold;
+  font-size: 1em;
+}
+.react-terminal-input {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.react-terminal-wrapper {
+  padding-top: 20px !important;
+  height: 100vh;
+}
+.name {
+  font-size: 1.5em;
+  color: #7cff00;
+  font-weight: bolder;
+}
+.about-div {
+  word-wrap: break-word;
+  width: 95%;
+}
+.highlight {
+  font-weight: bolder;
+  color: #7cff00;
+}
+.primary-skills-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.primary-skills-content {
+  flex: content;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  color: #009cf4;
+  font-weight: bold;
+  font-size: 1.5em;
+  flex-grow: inherit;
+}
+
+.secondary-skills-content {
+  flex: content;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  color: #f98994;
+  font-weight: bold;
+  font-size: 1.5em;
+  flex-grow: inherit;
+}
+.experience-div {
+  display: flex;
+}
+.experience-inner {
+  margin-right: 1.5em;
+  font-weight: bolder;
+  font-size: 1em
+}
+.experience-date {
+  color: darksalmon
+}
+.experience-location {
+  color: blanchedalmond
+}
+.experience-position {
+  color: aqua
+}
+.experience-name {
+  color: #7cff01
+}
+.projects-div {
+  font-weight: bolder;
+  margin-bottom: 2em;
+}
+.projects-name {
+  color: #7cff01;
+  font-size: 1.2em
+}
+.projects-description {
+  color: darksalmon;
+  font-size: 0.8em;
+}
+.projects-stack {
+  color: aqua;
+  font-size: 0.7em
+}
+.default-command {
+  font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+.linkedIn {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1em;
+    color: antiquewhite
+}
