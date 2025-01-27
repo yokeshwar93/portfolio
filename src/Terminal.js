@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Terminal, { ColorMode, TerminalOutput, TerminalInput } from 'react-terminal-ui';
 
 const commands = [
-<TerminalOutput><span className='available-commands'>view-resume</span></TerminalOutput>,
+          <TerminalOutput><span className='available-commands'>view-resume</span></TerminalOutput>,
           <TerminalOutput><span className='available-commands'>about</span></TerminalOutput>,
           <TerminalOutput><span className='available-commands'>primary-skills</span></TerminalOutput>,
           <TerminalOutput><span className='available-commands'>secondary-skills</span></TerminalOutput>,
@@ -226,7 +226,7 @@ const TerminalComponent = (props = {}) => {
                     ld.push(ProjectsComponent());
                     break;                   
                 case 'view-resume':
-                    window.open('https://drive.google.com/file/d/1Mc_H8nBGGPQ1_HLJA26KzciE9qrv3M0F/view?usp=sharing','_blank');
+                    window.open('https://drive.google.com/file/d/12TCmlzLR_WwE7brtWOK3YGQXdK0Ux1on/view?usp=sharing','_blank');
                     break;    
                 case 'clear':
                     ld = [];
