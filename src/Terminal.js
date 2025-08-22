@@ -27,6 +27,7 @@ const primarySkills = [
     'Typescript',
     'Javascript',
     'Nodejs',
+    'Java',
     'Nestjs',
     'HTML',
     'CSS',
@@ -38,6 +39,8 @@ const primarySkills = [
 ]
 
 const secondarySkills = [
+    'Spring',
+    'Spring Boot',
     'CI/CD',
     'Cypress',
     'Supertest',
@@ -56,10 +59,22 @@ const secondarySkills = [
 
 const experiences = [
     {
+        name: 'Teya',
+        position: 'Senior Software Engineer',
+        location: 'Barcelona, Spain',
+        date: 'Oct 2024 - Present'
+    },
+    {
+        name: 'Kingmakers',
+        position: 'Senior Software Engineer - Freelance',
+        location: 'Barcelona, Spain',
+        date: 'July 2024 - Oct 2024'
+    },
+    {
         name: 'Marfeel',
         position: 'Senior Full stack Engineer',
         location: 'Barcelona, Spain',
-        date: 'May 2023 - Dec 2023'
+        date: 'May 2023 - Jan 2024'
     },
     {
         name: 'Glovo',
@@ -88,6 +103,11 @@ const experiences = [
 ]
 
 const projects = [
+    {
+        name: 'Teya Ecommerce Checkout',
+        description: 'Checkout experience on the web for ecommerce clients',
+        stack: 'React/ TypeScript/ Next JS/ Postgres/ Node/ Java/ Spring boot.'
+    },
     {
         name: 'Marfeel Compass App',
         description: 'Web application for news companies to handle digital space.',
@@ -169,11 +189,15 @@ const SocialComponent = () => {
     )
 }
 
+const defaultOutput = [
+          <TerminalOutput>Hi there, This is <span className='name'>Yokesh</span> and welcome to my protfolio website!&#128075;</TerminalOutput>,
+          <TerminalOutput></TerminalOutput>
+]
+
 const TerminalComponent = (props = {}) => {
         const [colorMode, setColorMode] = useState(ColorMode.Dark);
         const [lineData, setLineData] = useState([
-          <TerminalOutput>Hi there, This is <span className='name'>Yokesh</span> and welcome to my protfolio website!&#128075;</TerminalOutput>,
-          <TerminalOutput></TerminalOutput>,
+          ...defaultOutput,
           ...availableCommands
         ]);
       
@@ -247,15 +271,6 @@ const TerminalComponent = (props = {}) => {
                      
 
             }
-        //   if (input.toLocaleLowerCase().trim() === 'view-source') {
-        //     ld.push(<TerminalInput><b>TEst</b></TerminalInput>)
-        //   } else if (input.toLocaleLowerCase().trim() === 'view-react-docs') {
-        //     window.open('https://reactjs.org/docs/getting-started.html', '_blank');
-        //   } else if (input.toLocaleLowerCase().trim() === 'clear') {
-        //     ld = [];
-        //   } else if (input) {
-        //     ld.push(<TerminalOutput>Unrecognized command</TerminalOutput>);
-        //   }
           setLineData(ld);
         }
       
@@ -279,9 +294,6 @@ const TerminalComponent = (props = {}) => {
         }
         return (
           <div className="container" >
-            {/* <div className="d-flex flex-row-reverse p-2">
-              <button className={ btnClasses.join(' ') } onClick={ toggleColorMode } >Enable { colorMode === ColorMode.Light ? 'Dark' : 'Light' } Mode</button>
-            </div> */}
             <Terminal 
               name=''
               colorMode={ colorMode }  
